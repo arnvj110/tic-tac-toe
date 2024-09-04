@@ -47,6 +47,7 @@ function checkTie(c) {
             return false;
         }
     }
+    document.getElementById("result").textContent="It's a Tie!"
     return true;
 }
 running = true;
