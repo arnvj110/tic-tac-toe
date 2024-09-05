@@ -19,9 +19,26 @@ button{
     color:white;
     border:none;
     cursor:pointer;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
     box-shadow: 3px 3px 3px hsl(0, 100%, 40%),-3px -3px 3px hsl(240, 100%, 40%);
+    
+}
+button:hover{
+    animation: z 1s ease-in-out infinite;
 }
 #result{
     color:white;
     font-size: 4rem;
+}
+@keyframes z{
+    0%{
+        box-shadow: 3px 3px 3px hsl(0, 100%, 40%),-3px -3px 3px hsl(240, 100%, 40%);
+    }
+    50%{
+        box-shadow: 3px 3px 3px hsl(240, 100%, 40%),-3px -3px 3px hsl(0, 100%, 40%);
+    }
+    100%{
+        box-shadow: 3px 3px 3px hsl(0, 100%, 40%),-3px -3px 3px hsl(240, 100%, 40%);
+    }
 }
