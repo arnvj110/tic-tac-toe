@@ -2,6 +2,8 @@ body{
     background-color: hsl(0, 0%, 20%);
     margin: 0px;
     text-align: center;
+    display:flex;
+    flex-direction: column;
 }
 h1{
     color:white;
@@ -11,8 +13,8 @@ h1{
 }
 button{
     margin:4px;
-    min-width: 125px;
-    min-height: 125px;
+    min-width: 115px;
+    min-height: 115px;
     border-radius: 10px;
     background-color: rgb(169, 24, 167);
     font-size: 5rem;
@@ -24,6 +26,19 @@ button{
     box-shadow: 3px 3px 3px hsl(0, 100%, 40%),-3px -3px 3px hsl(240, 100%, 40%);
     
 }
+.top{
+    display:flex;
+    justify-content: center;
+}
+.middle{
+    display:flex;
+    justify-content: center;
+}
+.bottom{
+    display:flex;
+    justify-content: center;
+}
+
 button:hover{
     animation: z 1s ease-in-out infinite;
 }
